@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Таксі «Їдемо»</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <div class="stage">
+    <aside class="guide" aria-label="Сценарій демонстрації">
+      <div class="logo">
+        <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16V11l2.2-4.4A2 2 0 0 1 8 5.5h8a2 2 0 0 1 1.8 1.1L20 11v5"/><path d="M3 16h18v2.5H3z"/><circle cx="7.5" cy="13" r=".6"/><circle cx="16.5" cy="13" r=".6"/></svg></span>
+        Їдемо
+      </div>
+      <h1>Інтерактивний прототип застосунку замовлення таксі</h1>
+      <p class="meta">Лабораторна робота №1 · Прототипування інтерфейсів</p>
+      <div class="task">
+        <p class="eyebrow">Основне завдання користувача</p>
+        <p>Олена, 34 роки, зранку замовляє таксі з дитячим кріслом, щоб вчасно відвезти сина в садочок і не телефонувати диспетчеру.</p>
+      </div>
+      <ol class="steps" id="steps"></ol>
+      <div class="controls">
+        <button class="btn-ghost" data-act="reset">Почати спочатку</button>
+        <label class="switch"><input type="checkbox" id="hintsToggle" checked> Підказки в застосунку</label>
+      </div>
+      <p class="fine">Час у прототипі прискорено: 1 хвилина ≈ 1,5 секунди. Адреси, водії та платіжні дані вигадані.</p>
+    </aside>
+
+    <div class="phone" id="phone">
+      <div class="statusbar" aria-hidden="true">
+        <span id="clock">08:05</span><span class="notch"></span>
+        <span class="sb-r">
+          <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="1"/><rect x="4.5" y="5" width="3" height="6" rx="1"/><rect x="9" y="2.5" width="3" height="8.5" rx="1"/><rect x="13.5" y="0" width="3" height="11" rx="1"/></svg>
+          <svg width="25" height="12" viewBox="0 0 25 12" fill="none" stroke="currentColor"><rect x=".5" y=".5" width="21" height="11" rx="3"/><rect x="2.5" y="2.5" width="14" height="7" rx="1.5" fill="currentColor" stroke="none"/><path d="M23.5 4v4" stroke-linecap="round"/></svg>
+        </span>
+      </div>
+      <div class="app" id="app">
+        <svg id="map" role="img" aria-label="Карта міста"></svg>
+        <div id="overlay"></div>
+      </div>
+    </div>
+  </div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

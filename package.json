@@ -1,0 +1,8 @@
+{
+  "name": "yidemo-structured",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"start": "vite --host", "dev": "vite --host"},
+  "devDependencies": {"vite": "^6.0.0"}
+}
